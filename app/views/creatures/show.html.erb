@@ -1,0 +1,9 @@
+<h1>only this creature <%= link_to  "(<)", creatures_path %></h1>
+<br/>
+<h4><%= @creature.name %></h4>
+<p><%= @creature.description %></p>
+<br/>
+<div class="btn-group">
+    <button><%= link_to  "edit", edit_creature_path %></button>
+    <%= button_to  "delete", @creature, method: :delete %>
+</div>
